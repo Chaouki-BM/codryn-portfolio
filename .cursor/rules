@@ -1,0 +1,7 @@
+# Codryn portfolio — project intelligence
+
+- Content edits live in `src/data/` (company, projects, services); avoid hardcoding copy in components.
+- Accent color is electric blue `#2B7FFF` aligned with logo center element.
+- Contact form uses mailto; swap handler in ContactForm.jsx for Formspree/API when needed.
+- Plan/Act workflow: stay in PLAN until user types ACT.
+- Logo asset: `public/logo.png`.
