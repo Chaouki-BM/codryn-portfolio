@@ -9,7 +9,10 @@ export default function Logo({
   className = 'h-8 w-auto',
   alt = 'Codryn',
 }) {
-  const src = variant === 'light' ? '/logo.png' : '/logo-on-dark.png'
+  // Respect Vite `base` (e.g. /REPO_NAME/ on GitHub Pages)
+  const base = import.meta.env.BASE_URL
+  const src =
+    variant === 'light' ? `${base}logo.png` : `${base}logo-on-dark.png`
 
   return (
     <img
